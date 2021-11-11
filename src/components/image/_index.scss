@@ -1,0 +1,9 @@
+
+.c-image {
+  @include component-properties('image');
+
+	min-width: 0;
+	object-fit: cover;
+	vertical-align: middle;
+	width: 100%;
+}

@@ -1,0 +1,31 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs';
+
+import Grid from './';
+import GridItem from './item';
+
+<Meta title="Layout/Grid" component={Grid} />
+
+# Grid
+
+<Props of={Grid} />
+
+
+## Usage
+
+Grid.........
+
+## Stories
+
+** Default **
+<Preview>
+	<Story name="Default">
+		<Grid>
+			<GridItem columns="span 6">
+				Item
+			</GridItem>
+			<GridItem columns="span 6">
+				Item
+			</GridItem>
+		</Grid>
+	</Story>
+</Preview>

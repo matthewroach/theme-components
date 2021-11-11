@@ -1,0 +1,74 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs';
+
+import Stack from './';
+
+<Meta title="Layout/Stack" component={Stack} />
+
+# Stack
+
+<Props of={Stack} />
+
+
+## Usage
+
+Stack.........
+
+## Stories
+
+** Vertical **
+<Preview>
+	<Story name="Vertical">
+		<Stack>
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+		</Stack>
+	</Story>
+</Preview>
+
+** Horizontal **
+<Preview>
+	<Story name="Horizontal">
+		<Stack direction="horizontal">
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+		</Stack>
+	</Story>
+</Preview>
+
+** Alignment **
+<Preview>
+	<Story name="Alignment">
+		<Stack direction="horizontal" alignment="start">
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+		</Stack>
+		<Stack direction="horizontal" alignment="center">
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+		</Stack>
+		<Stack direction="horizontal" alignment="end">
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+		</Stack>
+	</Story>
+</Preview>
+
+** Custom Gap **
+<Preview>
+	<Story name="Custom Gap">
+		<Stack>
+			<Stack direction="horizontal" gap="5px">
+				<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+				<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			</Stack>
+			<Stack direction="horizontal" gap="var(--global-spacing-200)">
+				<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+				<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			</Stack>
+			<Stack direction="horizontal" gap="4rem">
+				<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+				<div style={{ background: 'rgb(200 200 200)', height: '100px', width: '200px' }} />
+			</Stack>
+		</Stack>
+	</Story>
+</Preview>

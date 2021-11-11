@@ -1,0 +1,12 @@
+.b-promo {
+  @include block-components('promo');
+
+  @include block-properties('promo');
+}
+
+
+.b-custom-promo {
+  @include block-components('custom-promo');
+
+  @include block-properties('custom-promo');
+}

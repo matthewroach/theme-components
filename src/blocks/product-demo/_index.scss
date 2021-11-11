@@ -1,0 +1,5 @@
+.b-product {
+  @include block-components('product');
+
+  @include block-properties('product');
+}

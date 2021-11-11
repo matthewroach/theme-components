@@ -1,0 +1,30 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs';
+
+import Image from './';
+
+<Meta title="Components/Image" component={Image} />
+
+# Image
+
+<Props of={Image} />
+
+
+## Usage
+
+Image.........
+
+## Stories
+
+** Default **
+<Preview>
+	<Story name="Default">
+		<Image src="https://placekitten.com/1280/720" alt="" />
+	</Story>
+</Preview>
+
+** Custom Aspect Ratio **
+<Preview>
+	<Story name="Aspect Ratio">
+		<Image src="https://placekitten.com/640/360" alt="Cute Kitten" aspectRatio="1 / 1" />
+	</Story>
+</Preview>
