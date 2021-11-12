@@ -8,7 +8,7 @@ import {
 // TODO - Make image grid and content independent blocks
 const ProductDemo = ({}) => (
 	<Grid className="b-product">
-		<GridItem columns="span 6">
+		<GridItem desktop="span 6">
 			<Stack>
 				<Stack direction="horizontal">
 					<Image src="https://visionbegin.github.io/brands-ecom-landing-page/static/media/BestSeller2@2X.cf3bb2ec.jpg" alt="" aspectRatio="4 / 3" />
@@ -24,7 +24,7 @@ const ProductDemo = ({}) => (
 				</Stack>
 			</Stack>
 		</GridItem>
-		<GridItem columns="span 6">
+		<GridItem desktop="span 6">
 			<Stack>
 				<Overline text="Home / Woman / The Dream Pant" />
 				<Heading>The Dream Pant</Heading>

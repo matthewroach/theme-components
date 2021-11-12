@@ -82,19 +82,16 @@ $tokens: (
 				'font-size': inherit,
 				'text-decoration': none,
 			),
-			'paragraph': (
-				'font-size': var(--font-size-body),
-				'line-height': 1.5,
-			),
 			'link-hover': (
 				'color': var(--global-blue-500),
 				'text-decoration': underline,
 			),
+			'paragraph': (
+				'font-size': var(--font-size-body),
+				'line-height': 1.5,
+			),
 			'overline': (
 				'background-color': transparent,
-				// 'border-color': 'transparent transparent var(--primary-color) transparent',
-				// 'border-style': 'solid',
-				// 'border-width': '0 0 1px 0',
 				'font-weight': var(--global-font-weight-700),
 				'color': inherit,
 			),
@@ -115,7 +112,7 @@ $tokens: (
 						'font-size': var(--global-font-size-600),
 					),
 					'stack': (
-						'gap': var(--global-spacing-100),
+						'gap': var(--global-spacing-200),
 					),
 				),
 			),

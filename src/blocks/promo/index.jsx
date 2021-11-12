@@ -37,10 +37,10 @@ const FakeStory = {
 const Promo = ({ showHeadline }) => (
 	<HeadingSection>
 		<Grid className="b-promo">
-			<GridItem columns="span 6">
+			<GridItem desktop="span 6" tablet="span 4" mobile="span 12">
 				<Image src={FakeStory.promo_items.basic.url} alt="" aspectRatio="4 / 3" />
 			</GridItem>
-			<GridItem columns="span 6">
+			<GridItem desktop="span 6" tablet="span 8" mobile="span 12">
 				<Stack>
 					<Overline text={FakeStory.label.basic.text} />
 					{showHeadline ? (

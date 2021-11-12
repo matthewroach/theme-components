@@ -4,3 +4,13 @@
 
 	display: grid;
 }
+
+.l-grid-item {
+	@each $breakpoint, $breakpointValue in $breakpoints {
+		@media only screen and ($breakpointValue) {
+			--grid-column-start: var(--grid-column-start--#{$breakpoint});
+		}
+	}
+
+	grid-column-start: var(--grid-column-start);
+}
