@@ -26,9 +26,16 @@ const ProductDemo = ({}) => (
 		</GridItem>
 		<GridItem desktop="span 6">
 			<Stack>
-				<Overline text="Home / Woman / The Dream Pant" />
+				<Overline>Home / Woman / The Dream Pant</Overline>
 				<Heading>The Dream Pant</Heading>
-				<Paragraph text="Tailored look. Sweatpant feel. Made of soft double-knit fabric, the Dream Pant features an elastic waist, pintuck detailing, and a sleek tapered leg. Plus, it has a flat finish, so it looks polished, but it’s comfortable enough to nap in. The best part? It’s wrinkle resistant. From morning meetings to afternoon errands to late-night lounging—this pant looks (and feels) like a dream." />
+				<Paragraph>
+					Tailored look. Sweatpant feel. Made of soft double-knit fabric, the Dream
+					Pant features an elastic waist, pintuck detailing, and a sleek tapered leg.
+					Plus, it has a flat finish, so it looks polished, but it’s comfortable enough
+					to nap in. The best part? It’s wrinkle resistant. From morning meetings to
+					afternoon errands to late-night lounging—this pant looks (and feels) like
+					a dream.
+				</Paragraph>
 			</Stack>
 		</GridItem>
 	</Grid>

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Paragraph = ({ text }) => (
-	<p className="c-paragraph">{text}</p>
+const Paragraph = ({ children }) => (
+	<p className="c-paragraph">{children}</p>
 );
 
 Paragraph.propTypes = {
-	text: PropTypes.string.isRequired,
+	children: PropTypes.string.isRequired,
 };
 
 export default Paragraph;

@@ -42,16 +42,15 @@ const Promo = ({ showHeadline }) => (
 			</GridItem>
 			<GridItem desktop="span 6" tablet="span 8" mobile="span 12">
 				<Stack>
-					<Overline text={FakeStory.label.basic.text} />
+					<Overline>{FakeStory.label.basic.text}</Overline>
 					{showHeadline ? (
 						<Heading>
-							<Link
-								href={FakeStory.websites['the-gazette'].website_url}
-								text={FakeStory.headlines.basic}
-							/>
+							<Link href={FakeStory.websites['the-gazette'].website_url}>
+								{FakeStory.headlines.basic}
+							</Link>
 						</Heading>
 					) : null}
-					<Paragraph text={FakeStory.description.basic} />
+					<Paragraph>{FakeStory.description.basic}</Paragraph>
 				</Stack>
 			</GridItem>
 		</Grid>

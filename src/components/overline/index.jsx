@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 import Link from '../link';
 
-const Overline = ({ text, href }) => (
+const Overline = ({ children, href }) => (
 	<div className="c-overline">
-		{href ? <Link href={href} text={text} /> : text}
+		{href ? <Link href={href}>{children}</Link> : children}
 	</div>
 );
 
 Overline.propTypes = {
-	text: PropTypes.string.isRequired,
+	children: PropTypes.string.isRequired,
 	href: PropTypes.string,
 };
 
