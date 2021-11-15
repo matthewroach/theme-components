@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Date = ({ date, dateTime }) => <time className="c-date" dateTime={dateTime}>{date}</time>;
+const Date = ({ children, dateTime }) => <time className="c-date" dateTime={dateTime}>{children}</time>;
 
 Date.propTypes = {
-	date: PropTypes.string.isRequired,
+	children: PropTypes.string.isRequired,
 	dateTime: PropTypes.string.isRequired,
 };
 
