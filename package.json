@@ -2,7 +2,6 @@
   "name": "@matthewroach/theme-components",
   "version": "0.1.1",
   "description": "Themeable Design System",
-  "main": "src/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -10,16 +9,18 @@
     "type": "git",
     "url": "ssh://git@github.com:matthewroach/theme-components.git"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
-    "src",
-    "index.js",
-    "_index.scss"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "lint": "eslint --ext js --ext jsx src",
     "lint:fix": "npm run lint -- --fix",
     "lint:styles": "stylelint '**/*.scss' --formatter verbose",
     "lint:styles:fix": "stylelint '**/*.scss' --fix",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -29,6 +30,7 @@
   "author": "",
   "license": "CC-BY-NC-ND-4.0",
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
