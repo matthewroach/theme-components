@@ -1,3 +1,4 @@
+/* eslint import/order: ["error", {"alphabetize": {"order": "asc", "caseInsensitive": true}}] */
 import Caption from './components/caption';
 import Date from './components/date';
 import Heading from './components/headings/heading';
