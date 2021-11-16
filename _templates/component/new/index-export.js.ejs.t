@@ -1,6 +1,6 @@
 ---
 inject: true
-to: index.js
+to: src/index.js
 after: export
 ---
 	<%= Name %>,
