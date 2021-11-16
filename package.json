@@ -1,6 +1,6 @@
 {
   "name": "@matthewroach/theme-components",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Themeable Design System",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
