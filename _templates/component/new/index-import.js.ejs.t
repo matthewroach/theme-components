@@ -1,6 +1,6 @@
 ---
 inject: true
-to: src/index.js
+to: index.js
 before: export
 ---
 import <%= Name %> from './components/<%= name %>';

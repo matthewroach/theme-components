@@ -11,7 +11,9 @@
     "url": "ssh://git@github.com:matthewroach/theme-components.git"
   },
   "files": [
-    "src"
+    "src",
+    "index.js",
+    "_index.scss"
   ],
   "scripts": {
     "lint": "eslint --ext js --ext jsx src",

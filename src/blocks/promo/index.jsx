@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
 	Grid, GridItem, Heading, Image, Paragraph, Overline, Stack, Link, HeadingSection,
-} from '../../index';
+} from '../../../index';
 
 const FakeStory = {
 	_id: 'DLFEXGWKDFF5PI2PCYT2G7VUZI',

@@ -1,0 +1,27 @@
+// Output the theme tokens to CSS Variables
+@import './src/scss/theme';
+
+@import './src/scss/global/reset';
+
+@import './src/scss/global/a11y';
+
+// Output each components CSS
+@import './src/components/caption';
+@import './src/components/date';
+@import './src/components/headings';
+@import './src/components/image';
+@import './src/components/link';
+@import './src/components/overline';
+@import './src/components/paragraph';
+
+@import './src/layouts/stack';
+@import './src/layouts/grid';
+
+// Blocks
+@import './src/blocks/promo';
+
+@import './src/blocks/product-demo';
+
+body {
+	@include component-properties('body');
+}

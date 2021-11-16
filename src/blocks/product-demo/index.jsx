@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {
 	Grid, GridItem, Heading, Image, Paragraph, Overline, Stack, Link, HeadingSection,
-} from '../../index';
+} from '../../../index';
 
 // TODO - Make image grid and content independent blocks
 const ProductDemo = ({}) => (
