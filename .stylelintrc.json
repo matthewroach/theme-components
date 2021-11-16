@@ -7,11 +7,14 @@
     "stylelint-config-sass-guidelines"
   ],
   "rules": {
+    "indentation": "tab",
     "max-nesting-depth": 5,
     "plugin/no-unsupported-browser-features": [
       true,
       {
+        "browsers": ["> 1%", "Last 2 versions", "not IE 11"],
         "ignore": ["css-sticky","multicolumn"],
+        "ignorePartialSupport": true,
         "severity": "warning"
       }
     ],

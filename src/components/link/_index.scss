@@ -1,7 +1,7 @@
 .c-link {
-  @include component-properties('link');
+	@include component-properties('link');
 
-  &:hover {
-    @include component-properties('link-hover');
-  }
+	&:hover {
+		@include component-properties('link-hover');
+	}
 }

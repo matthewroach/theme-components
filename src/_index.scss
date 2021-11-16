@@ -23,5 +23,5 @@
 @import './blocks/product-demo';
 
 body {
-  @include component-properties('body');
+	@include component-properties('body');
 }

@@ -1,5 +1,5 @@
 .c-image {
-  @include component-properties('image');
+	@include component-properties('image');
 
 	min-width: 0;
 	object-fit: cover;

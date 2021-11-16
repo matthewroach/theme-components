@@ -1,5 +1,5 @@
 .l-grid {
-  @include component-properties('grid');
+	@include component-properties('grid');
 
 	display: grid;
 }
