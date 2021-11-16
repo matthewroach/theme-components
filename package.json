@@ -12,7 +12,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "build-storybook": "build-storybook",
-    "component:new": "npx hygen component new"
+    "component:new": "hygen component new"
   },
   "author": "",
   "license": "CC-BY-NC-ND-4.0",
@@ -40,6 +40,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "global-jsdom": "^8.3.0",
     "husky": "^7.0.4",
+    "hygen": "^6.1.0",
     "jest": "^27.3.1",
     "jsdom": "^18.0.1",
     "mini-css-extract-plugin": "^2.4.4",
