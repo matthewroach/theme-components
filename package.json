@@ -11,15 +11,11 @@
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "component:new": "npx hygen component new"
   },
   "author": "",
   "license": "CC-BY-NC-ND-4.0",
-  "husky": {
-    "hooks": {
-      "pre-push": "npm run lint && npm run lint:styles && npm run test:coverage"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.0",
