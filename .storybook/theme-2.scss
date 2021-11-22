@@ -13,11 +13,11 @@ $global: (
 	'blue-500': rgb(79 93 117),
 	'blue-600': rgb(80 103 127),
 
-	'spacing-25': 4px,
-	'spacing-50': 8px,
-	'spacing-100': 16px,
-	'spacing-150': 24px,
-	'spacing-200': 32px,
+	'spacing-25': 8px,
+	'spacing-50': 16px,
+	'spacing-100': 24px,
+	'spacing-150': 32px,
+	'spacing-200': 36px,
 
 	'font-weight-100': 100,
 	'font-weight-200': 200,
@@ -29,15 +29,15 @@ $global: (
 	'font-weight-800': 800,
 	'font-weight-900': 900,
 
-	'font-size-100': 0.75rem,
-	'font-size-200': 0.875rem,
-	'font-size-300': 1rem,
-	'font-size-400': 1.125rem,
-	'font-size-500': 1.375rem,
-	'font-size-600': 1.625rem,
-	'font-size-700': 1.875rem,
-	'font-size-800': 2.25rem,
-	'font-size-900': 2.75rem,
+	'font-size-100': 0.875rem,
+	'font-size-200': 1rem,
+	'font-size-300': 1.125rem,
+	'font-size-400': 1.375rem,
+	'font-size-500': 1.625rem,
+	'font-size-600': 1.875rem,
+	'font-size-700': 2.25rem,
+	'font-size-800': 2.75rem,
+	'font-size-900': 3.25rem,
 );
 
 $alias: (
@@ -75,25 +75,29 @@ $tokens: (
 				'line-height': 1.5,
 			),
 			'image': (
-				'aspect-ratio': '16 / 9',
+				'aspect-ratio': '4 / 3',
 			),
 			'link': (
 				'color': inherit,
 				'font-size': inherit,
-				'text-decoration': none,
+				'text-decoration': underline,
 			),
 			'link-hover': (
 				'color': var(--global-blue-500),
 				'text-decoration': underline,
 			),
 			'paragraph': (
+				'font-family': inherit,
 				'font-size': var(--font-size-body),
 				'line-height': 1.5,
 			),
 			'overline': (
 				'background-color': transparent,
-				'font-weight': var(--global-font-weight-700),
+				'border-color': 'transparent transparent var(--primary-color) transparent',
+				'border-style': 'solid',
+				'border-width': '0 0 1px 0',
 				'color': inherit,
+				'font-weight': var(--global-font-weight-700),
 			),
 			'grid': (
 				'gap': var(--global-spacing-100),
@@ -109,7 +113,12 @@ $tokens: (
 			'promo': (
 				'components': (
 					'heading': (
-						'font-size': var(--global-font-size-600),
+						'font-size': var(--global-font-size-800),
+						'line-height': 1.25,
+					),
+					'paragraph': (
+						'font-family': var(--secondary-font-family),
+						'font-size': var(--global-font-size-400),
 					),
 					'stack': (
 						'gap': var(--global-spacing-100),

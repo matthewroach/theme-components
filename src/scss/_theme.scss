@@ -41,7 +41,7 @@
 			}
 
 			// Block Tokens
-			@each $blockName, $blockItem in map.get($tokens, $breakpoint, 'block') {
+			@each $blockName, $blockItem in map.get($tokens, $breakpoint, 'blocks') {
 				@if list.length($blockItem) == 0 {
 					@warn 'Block "#{$blockName}" is configured with no options';
 				} @else {

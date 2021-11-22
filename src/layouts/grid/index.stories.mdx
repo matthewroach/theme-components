@@ -7,7 +7,15 @@ import GridItem from './item';
 
 # Grid
 
+A grid is to be used for two dimensional layout
+
+## Grid
+
 <Props of={Grid} />
+
+## GridItem
+
+<Props of={GridItem} />
 
 
 ## Usage
@@ -20,11 +28,31 @@ Grid.........
 <Preview>
 	<Story name="Default">
 		<Grid>
-			<GridItem columns="span 6">
-				Item
+			<GridItem desktop="span 6">
+				<div style={{ background: 'rgb(200 200 200)', height: '25px' }} />
 			</GridItem>
-			<GridItem columns="span 6">
-				Item
+			<GridItem desktop="span 6">
+				<div style={{ background: 'rgb(200 200 200)', height: '25px' }} />
+			</GridItem>
+		</Grid>
+	</Story>
+</Preview>
+
+** Align Grid Item **
+<Preview>
+	<Story name="Align Grid Item">
+		<Grid>
+			<GridItem desktop="span 3">
+				<div style={{ background: 'rgb(200 200 200)', height: '100px' }} />
+			</GridItem>
+			<GridItem desktop="span 3" alignment="start">
+				<div style={{ background: 'rgb(200 200 200)', height: '25px' }} />
+			</GridItem>
+			<GridItem desktop="span 3" alignment="center">
+				<div style={{ background: 'rgb(200 200 200)', height: '25px' }} />
+			</GridItem>
+			<GridItem desktop="span 3" alignment="end">
+				<div style={{ background: 'rgb(200 200 200)', height: '25px' }} />
 			</GridItem>
 		</Grid>
 	</Story>

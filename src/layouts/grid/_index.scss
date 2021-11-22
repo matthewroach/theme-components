@@ -13,3 +13,16 @@
 
 	grid-column-start: var(--grid-column-start);
 }
+
+
+.l-grid-item[alignment='start'] {
+	align-self: start;
+}
+
+.l-grid-item[alignment='center'] {
+	align-self: center;
+}
+
+.l-grid-item[alignment='end'] {
+	align-self: end;
+}
