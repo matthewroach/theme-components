@@ -17,7 +17,7 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist",
     "component:new": "hygen component new",
     "lint": "eslint --ext js --ext jsx src",
     "lint:fix": "npm run lint -- --fix",
@@ -26,7 +26,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "version:patch": "npm version patch"
   },
   "author": "",
   "license": "CC-BY-NC-ND-4.0",
