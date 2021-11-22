@@ -17,16 +17,16 @@
     "README.md"
   ],
   "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
+    "component:new": "hygen component new",
     "lint": "eslint --ext js --ext jsx src",
     "lint:fix": "npm run lint -- --fix",
     "lint:styles": "stylelint '**/*.scss' --formatter verbose",
     "lint:styles:fix": "stylelint '**/*.scss' --fix",
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
     "storybook": "start-storybook -p 6006",
+    "storybook:build": "build-storybook",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "build-storybook": "build-storybook",
-    "component:new": "hygen component new"
+    "test:coverage": "jest --coverage"
   },
   "author": "",
   "license": "CC-BY-NC-ND-4.0",
