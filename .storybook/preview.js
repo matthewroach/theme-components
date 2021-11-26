@@ -1,7 +1,5 @@
-// import './theme-2.scss';
 import primary from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!./theme.scss'
 import alternative from '!!style-loader?injectType=lazyStyleTag!css-loader!sass-loader!./theme-alt.scss'
-
 
 import cssVariablesTheme from '@etchteam/storybook-addon-css-variables-theme'
 
