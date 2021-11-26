@@ -6,6 +6,7 @@ module.exports = {
     "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
+    "@etchteam/storybook-addon-css-variables-theme",
     "@storybook/addon-links",
     "@storybook/addon-essentials"
   ],

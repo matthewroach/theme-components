@@ -87,7 +87,7 @@ $tokens: (
 				'text-decoration': underline,
 			),
 			'paragraph': (
-        'font-family': inherit,
+				'font-family': inherit,
 				'font-size': var(--font-size-body),
 				'line-height': 1.5,
 			),
@@ -114,12 +114,12 @@ $tokens: (
 				'components': (
 					'heading': (
 						'font-size': var(--global-font-size-800),
-            'line-height': 1.25,
+						'line-height': 1.25,
 					),
-          'paragraph': (
-            'font-family': var(--secondary-font-family),
-            'font-size': var(--global-font-size-400),
-          ),
+					'paragraph': (
+						'font-family': var(--secondary-font-family),
+						'font-size': var(--global-font-size-400),
+					),
 					'stack': (
 						'gap': var(--global-spacing-100),
 					),

@@ -87,15 +87,12 @@ $tokens: (
 				'text-decoration': underline,
 			),
 			'paragraph': (
-				'font-family': inherit,
+        'font-family': inherit,
 				'font-size': var(--font-size-body),
 				'line-height': 1.5,
 			),
 			'overline': (
 				'background-color': transparent,
-				'border-color': 'transparent transparent var(--primary-color) transparent',
-				'border-style': 'solid',
-				'border-width': '0 0 1px 0',
 				'color': inherit,
 				'font-weight': var(--global-font-weight-700),
 			),
@@ -104,7 +101,7 @@ $tokens: (
 				'grid-template-columns': 'repeat(12, 1fr)'
 			),
 			'stack': (
-				'gap': var(--global-spacing-100),
+				'gap': var(--global-spacing-50),
 			),
 		),
 
@@ -114,12 +111,12 @@ $tokens: (
 				'components': (
 					'heading': (
 						'font-size': var(--global-font-size-800),
-						'line-height': 1.25,
+            'line-height': 1.25,
 					),
-					'paragraph': (
-						'font-family': var(--secondary-font-family),
-						'font-size': var(--global-font-size-400),
-					),
+          'paragraph': (
+            'font-family': var(--secondary-font-family),
+            'font-size': var(--global-font-size-400),
+          ),
 					'stack': (
 						'gap': var(--global-spacing-100),
 					),
