@@ -4,4 +4,8 @@
 	&:hover {
 		@include component-properties('link-hover');
 	}
+
+	&:visited {
+		@include component-properties('link-visited');
+	}
 }

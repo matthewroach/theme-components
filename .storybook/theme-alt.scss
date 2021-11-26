@@ -84,7 +84,10 @@ $tokens: (
 			),
 			'link-hover': (
 				'color': var(--global-blue-500),
-				'text-decoration': underline,
+				'text-decoration': none,
+			),
+			'link-visited': (
+				'text-decoration': none,
 			),
 			'paragraph': (
         'font-family': inherit,
