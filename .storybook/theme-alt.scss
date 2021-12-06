@@ -109,11 +109,11 @@ $tokens: (
 		),
 
 		// Blocks Tokens
-		block: (
+		blocks: (
 			'promo': (
 				'components': (
 					'heading': (
-						'font-size': var(--global-font-size-800),
+						'font-size': var(--global-font-size-600),
             'line-height': 1.25,
 					),
           'paragraph': (
@@ -128,7 +128,7 @@ $tokens: (
 			'product': (
 				'components': (
 					'heading': (
-						'font-size': var(--global-font-size-800),
+						'font-size': var(--global-font-size-600),
 						'font-weight': var(--global-font-weight-900),
 					),
 				)
