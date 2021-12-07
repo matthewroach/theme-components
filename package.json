@@ -37,6 +37,7 @@
     "@babel/eslint-parser": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@etchteam/storybook-addon-css-variables-theme": "^1.0.2",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
@@ -73,6 +74,5 @@
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-no-unsupported-browser-features": "^5.0.2"
-  },
-  "dependencies": {}
+  }
 }

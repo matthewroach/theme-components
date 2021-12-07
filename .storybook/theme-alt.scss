@@ -84,7 +84,10 @@ $tokens: (
 			),
 			'link-hover': (
 				'color': var(--global-blue-500),
-				'text-decoration': underline,
+				'text-decoration': none,
+			),
+			'link-visited': (
+				'text-decoration': none,
 			),
 			'paragraph': (
 				'font-family': inherit,
@@ -93,9 +96,6 @@ $tokens: (
 			),
 			'overline': (
 				'background-color': transparent,
-				'border-color': 'transparent transparent var(--primary-color) transparent',
-				'border-style': 'solid',
-				'border-width': '0 0 1px 0',
 				'color': inherit,
 				'font-weight': var(--global-font-weight-700),
 			),
@@ -104,16 +104,16 @@ $tokens: (
 				'grid-template-columns': 'repeat(12, 1fr)'
 			),
 			'stack': (
-				'gap': var(--global-spacing-100),
+				'gap': var(--global-spacing-50),
 			),
 		),
 
 		// Blocks Tokens
-		block: (
+		blocks: (
 			'promo': (
 				'components': (
 					'heading': (
-						'font-size': var(--global-font-size-800),
+						'font-size': var(--global-font-size-600),
 						'line-height': 1.25,
 					),
 					'paragraph': (
@@ -127,11 +127,8 @@ $tokens: (
 			),
 			'product': (
 				'components': (
-					'overline': (
-						'border-width': '0 0 0 0',
-					),
 					'heading': (
-						'font-size': var(--global-font-size-800),
+						'font-size': var(--global-font-size-600),
 						'font-weight': var(--global-font-weight-900),
 					),
 				)
