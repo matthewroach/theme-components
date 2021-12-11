@@ -116,12 +116,12 @@ $tokens: (
 						'font-size': var(--global-font-size-400),
 						'line-height': 1.25,
 					),
+					'link': (
+						'text-decoration': none,
+					),
 					'paragraph': (
 						'font-family': var(--secondary-font-family),
 						'font-size': var(--global-font-size-400),
-					),
-					'stack': (
-						'gap': var(--global-spacing-100),
 					),
 				),
 			),

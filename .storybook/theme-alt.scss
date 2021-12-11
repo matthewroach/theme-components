@@ -42,8 +42,8 @@ $global: (
 
 $alias: (
 	'primary-color': var(--global-blue-500),
-	'primary-font-family': 'Work Sans',
-	'secondary-font-family': 'Times New Roman',
+	'primary-font-family': 'Patua One',
+	'secondary-font-family': 'Open Sans',
 
 	'font-size-tiny': var(--global-font-size-100),
 	'font-size-small': var(--global-font-size-200),
@@ -57,7 +57,7 @@ $tokens: (
 		// Component Tokens
 		components: (
 			'body': (
-				'font-family': var(--primary-font-family),
+				'font-family': var(--secondary-font-family),
 				'font-size': var(--font-size-body),
 			),
 			'caption': (
@@ -113,12 +113,11 @@ $tokens: (
 			'promo': (
 				'components': (
 					'heading': (
-						'font-size': var(--global-font-size-600),
+						'font-size': var(--global-font-size-500),
 						'line-height': 1.25,
 					),
-					'paragraph': (
-						'font-family': var(--secondary-font-family),
-						'font-size': var(--global-font-size-400),
+					'link': (
+						'text-decoration': none,
 					),
 					'stack': (
 						'gap': var(--global-spacing-100),
@@ -131,7 +130,7 @@ $tokens: (
 						'font-size': var(--global-font-size-600),
 						'font-weight': var(--global-font-weight-900),
 					),
-				)
+				),
 			),
 		),
 	),
