@@ -1,0 +1,11 @@
+.c-button {
+  @include component-properties('button');
+}
+
+.c-button--small {
+  @include component-properties('button-small');
+}
+
+.c-button--large {
+  @include component-properties('button-large');
+}

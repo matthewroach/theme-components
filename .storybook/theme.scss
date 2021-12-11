@@ -60,6 +60,19 @@ $tokens: (
 				'font-family': var(--primary-font-family),
 				'font-size': var(--font-size-body),
 			),
+			'button': (
+				'background-color': var(--global-gray-100),
+				'border': none,
+				'color': white,
+				'font-size': var(--font-size-body),
+				'padding': var(--global-spacing-25) var(--global-spacing-50),
+			),
+			'button-small': (
+				'font-size': var(--font-size-small),
+			),
+			'button-large': (
+				'font-size': var(--global-font-size-400),
+			),
 			'caption': (
 				'color': var(--global-gray-100),
 				'font-size': var(--font-size-small),

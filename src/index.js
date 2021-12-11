@@ -1,4 +1,5 @@
 /* eslint import/order: ["error", {"alphabetize": {"order": "asc", "caseInsensitive": true}}] */
+import Button from './components/button';
 import Caption from './components/caption';
 import Date from './components/date';
 import Heading from './components/headings/heading';
@@ -13,6 +14,7 @@ import GridItem from './layouts/grid/item';
 import Stack from './layouts/stack';
 
 export {
+	Button,
 	Caption,
 	Date,
 	Heading,
