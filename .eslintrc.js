@@ -41,6 +41,7 @@ module.exports = {
 		'react/no-danger': 'off',
 		'react/jsx-props-no-spreading': 'off',
 		// For list of a11y definitions for this see: https://github.com/evcohen/eslint-plugin-jsx-a11y
+		'react/button-has-type': 'off',
 		'jsx-a11y/accessible-emoji': 2,
 		'jsx-a11y/alt-text': 2,
 		'jsx-a11y/anchor-has-content': 2,

@@ -14,7 +14,7 @@ Button.defaultProps = {
 
 Button.propTypes = {
 	children: PropTypes.string.isRequired,
-	type: PropTypes.string,
+	type: PropTypes.oneOf(['button', 'submit', 'reset']),
 	size: PropTypes.oneOf(['small', 'medium', 'large']),
 };
 
