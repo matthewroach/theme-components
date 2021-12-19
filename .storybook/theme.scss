@@ -67,6 +67,10 @@ $tokens: (
 				'font-size': var(--font-size-body),
 				'padding': var(--global-spacing-25) var(--global-spacing-50),
 			),
+			'button-hover': (
+				'background-color': var(--global-gray-50),
+				'transition': 'background-color 1000ms linear',
+			),
 			'button-small': (
 				'font-size': var(--font-size-small),
 			),

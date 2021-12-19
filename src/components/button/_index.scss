@@ -1,7 +1,17 @@
 .c-button {
   @include component-properties('button');
+
+  &:hover {
+    @include component-properties('button-hover');
+  }
 }
 
+.c-button--full {
+  text-align: center;
+  width: 100%;
+}
+
+/* Additional Button Sizes */
 .c-button--small {
   @include component-properties('button-small');
 }
