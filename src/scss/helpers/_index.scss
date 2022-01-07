@@ -10,10 +10,10 @@
 // --c-date-font-weight: 900
 //
 @mixin block-components($blockName) {
-	@if list.length(map.get($tokens, 'desktop', 'blocks', $blockName, 'components')) == 0 {
+	@if list.length(map.get($tokens, 'default', 'blocks', $blockName, 'components')) == 0 {
 		@warn 'Block "#{$blockName}" has components map with no values';
 	}
-	@each $name, $value in map.get($tokens, 'desktop', 'blocks', $blockName, 'components') {
+	@each $name, $value in map.get($tokens, 'default', 'blocks', $blockName, 'components') {
 		@if list.length($value) == 0 {
 			@warn 'Block "#{$blockName}" has component "#{$name}" with no values';
 		}
@@ -31,7 +31,7 @@
 // background-color: var(--b-list-background-color);
 //
 @mixin block-properties($blockName, $others...) {
-	@each $name, $value in map.get($tokens, 'desktop', 'blocks', $blockName, $others...) {
+	@each $name, $value in map.get($tokens, 'default', 'blocks', $blockName, $others...) {
 		@if type-of($value) != map {
 			// #{$name}: #{$value};
 			#{$name}: block-var($blockName, $name);
@@ -45,10 +45,10 @@
 // background-color: var(--c-overline-background-color);
 //
 @mixin component-properties($component) {
-	@if map.has-key($tokens, 'desktop', 'components', $component) == false {
+	@if map.has-key($tokens, 'default', 'components', $component) == false {
 		@warn 'Properties for component "#{$component}" not found.';
 	}
-	@each $name, $value in map.get($tokens, 'desktop', 'components', $component) {
+	@each $name, $value in map.get($tokens, 'default', 'components', $component) {
 		#{$name}: component-var($component, $name);
 	}
 }

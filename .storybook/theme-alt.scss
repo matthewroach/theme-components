@@ -1,7 +1,7 @@
 $breakpoints: (
-	desktop: 'min-width: 0px',
-	tablet: 'max-width: 800px',
-	mobile: 'max-width: 400px'
+	default: 'min-width: 0',
+	tablet: 'min-width: 48rem',
+	desktop: 'min-width: 64rem',
 );
 
 // Global Tokens
@@ -47,11 +47,11 @@ $alias: (
 
 	'font-size-tiny': var(--global-font-size-100),
 	'font-size-small': var(--global-font-size-200),
-	'font-size-body': var(--global-font-size-300),
+	'font-size-body': var(--global-font-size-500),
 );
 
 $tokens: (
-	desktop: (
+	default: (
 		// Alias Tokens
 		alias: (),
 		// Component Tokens

@@ -10,7 +10,7 @@ const GridItem = ({
 		style={{
 			'--grid-column-start--desktop': desktop,
 			'--grid-column-start--tablet': tablet || desktop,
-			'--grid-column-start--mobile': mobile || tablet || desktop,
+			'--grid-column-start--default': mobile || tablet || desktop,
 		}}
 	>
 		{children}

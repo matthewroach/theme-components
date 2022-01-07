@@ -1,7 +1,7 @@
 $breakpoints: (
-	desktop: 'min-width: 0px',
-	tablet: 'max-width: 800px',
-	mobile: 'max-width: 400px'
+	default: 'min-width: 0',
+	tablet: 'min-width: 48rem',
+	desktop: 'min-width: 64rem',
 );
 
 // Global Tokens
@@ -51,7 +51,7 @@ $alias: (
 );
 
 $tokens: (
-	desktop: (
+	default: (
 		// Alias Tokens
 		alias: (),
 		// Component Tokens
@@ -97,6 +97,7 @@ $tokens: (
 				'border-style': 'solid',
 				'border-width': '0 0 1px 0',
 				'color': inherit,
+				'font-size': inherit,
 				'font-weight': var(--global-font-weight-700),
 			),
 			'grid': (
@@ -147,9 +148,14 @@ $tokens: (
 		),
 		blocks: (),
 	),
-	mobile: (
+	desktop: (
 		alias: (),
-		components: (),
+		components: (
+			'overline': (
+				'font-size': var(--global-font-size-600),
+				'font-weight': var(--global-font-weight-700),
+			),
+		),
 		blocks: (),
 	)
 );
