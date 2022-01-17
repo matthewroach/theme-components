@@ -4,6 +4,11 @@
 
 @import 'helpers';
 
+
+$componentPrefix: '--xp';
+$blockPrefix: '--b';
+
+
 :root {
 	// Global Tokens
 	@each $name, $value in $global {
@@ -33,7 +38,7 @@
 					@if type-of($componentItem) == map {
 						@each $componentProperty, $componentValue in $componentItem {
 							@if type-of($componentValue) != map {
-								--c-#{$componentName}-#{$componentProperty}: #{$componentValue};
+								#{$componentPrefix}-#{$componentName}-#{$componentProperty}: #{$componentValue};
 							}
 						}
 					}
@@ -48,7 +53,7 @@
 					@if type-of($blockItem) == map {
 						@each $bProperty, $bValue in $blockItem {
 							@if type-of($bValue) != map {
-								--b-#{$blockName}-#{$bProperty}: #{$bValue};
+								#{$blockPrefix}-#{$blockName}-#{$bProperty}: #{$bValue};
 							}
 						}
 					}

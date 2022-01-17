@@ -7,7 +7,7 @@
 // different styles to the default component styles they are overridden
 // use CSS Variables
 //
-// --c-date-font-weight: 900
+// $componentPrefix-date-font-weight: 900
 //
 @mixin block-components($blockName) {
 	@if list.length(map.get($tokens, 'default', 'blocks', $blockName, 'components')) == 0 {
@@ -19,7 +19,7 @@
 		}
 		@if type-of($value) == map {
 			@each $a, $b in $value {
-				--c-#{$name}-#{$a}: #{$b};
+				#{$componentPrefix}-#{$name}-#{$a}: #{$b};
 			}
 		}
 	}
@@ -28,13 +28,16 @@
 //
 // Ouput all the blocks properties in the format
 // CSSProperty: CSSVariable
-// background-color: var(--b-list-background-color);
+// background-color: var($blockPrefix-list-background-color);
 //
 @mixin block-properties($blockName, $others...) {
-	@each $name, $value in map.get($tokens, 'default', 'blocks', $blockName, $others...) {
-		@if type-of($value) != map {
-			// #{$name}: #{$value};
-			#{$name}: block-var($blockName, $name);
+	@if map.has-key($tokens, 'default', 'blocks', $blockName, $others...) == false {
+		@warn 'Properties for block "#{$blockName}" not found.';
+	} @else {
+		@each $name, $value in map.get($tokens, 'default', 'blocks', $blockName, $others...) {
+			@if type-of($value) != map {
+				#{$name}: block-var($blockName, $name);
+			}
 		}
 	}
 }
@@ -42,7 +45,7 @@
 //
 // Output all the component values in format
 // CSSProperty: CSSVariable
-// background-color: var(--c-overline-background-color);
+// background-color: var($componentPrefix-overline-background-color);
 //
 @mixin component-properties($component) {
 	@if map.has-key($tokens, 'default', 'components', $component) == false {
@@ -57,14 +60,14 @@
 // Return the CSS Variable for a component item
 //
 @function component-var($component, $item) {
-	@return var(--c-#{$component}-#{$item});
+	@return var(#{$componentPrefix}-#{$component}-#{$item});
 }
 
 //
 // Return the CSS Variable for a block item
 //
 @function block-var($block, $item) {
-	@return var(--b-#{$block}-#{$item});
+	@return var(#{$blockPrefix}-#{$block}-#{$item});
 }
 
 //
