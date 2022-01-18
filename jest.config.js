@@ -7,6 +7,7 @@ module.exports = {
 		'./jest/testSetupFile.js',
 	],
 	verbose: true,
+	moduleFileExtensions: ['js', 'jsx', 'scss'],
 	moduleNameMapper: {
 		'^.+\\.(scss)$': 'identity-obj-proxy',
 	},
