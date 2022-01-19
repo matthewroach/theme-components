@@ -4,22 +4,22 @@
 	display: flex;
 }
 
-.l-stack[direction='vertical'] {
+.l-stack[data-style-direction='vertical'] {
 	flex-flow: column wrap;
 }
 
-.l-stack[direction='horizontal'] {
+.l-stack[data-style-direction='horizontal'] {
 	flex-direction: row;
 }
 
-.l-stack[alignment='start'] {
+.l-stack[data-style-alignment='start'] {
 	justify-content: flex-start;
 }
 
-.l-stack[alignment='center'] {
+.l-stack[data-style-alignment='center'] {
 	justify-content: center;
 }
 
-.l-stack[alignment='end'] {
+.l-stack[data-style-alignment='end'] {
 	justify-content: flex-end;
 }
