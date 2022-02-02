@@ -10,10 +10,10 @@ $alias: ();
 $tokens: (
 	default: (
 		blocks: (
-      'non-empty-block': (
-        color: 'red',
-      ),
-    ),
+			'non-empty-block': (
+				color: 'red',
+			),
+		),
 	),
 );
 
@@ -21,28 +21,28 @@ $tokens: (
 
 
 @include test-module('Helpers') {
-  @include test('block-properties') {
-    @include test('empty block') {
-      @include assert {
-        @include output {
-          @include block-properties('no-block');
-        }
+	@include test('block-properties') {
+		@include test('empty block') {
+			@include assert {
+				@include output {
+					@include block-properties('no-block');
+				}
 
-        @include expect {}
-      }
-    }
+				@include expect {}
+			}
+		}
 
-    @include test('non empty block') {
-      @include assert {
-        @include output {
-          @include block-properties('non-empty-block');
-        }
+		@include test('non empty block') {
+			@include assert {
+				@include output {
+					@include block-properties('non-empty-block');
+				}
 
-        @include expect {
-          color: var(--b-non-empty-block-color);
-        }
-      }
-    }
+				@include expect {
+					color: var(--b-non-empty-block-color);
+				}
+			}
+		}
 
-  }
+	}
 }
