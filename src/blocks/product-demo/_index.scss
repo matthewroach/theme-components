@@ -1,5 +1,7 @@
-.b-product {
-	@include block-components('product');
+@use '../../scss/theme';
 
-	@include block-properties('product');
+.b-product {
+	@include theme.block-components('product');
+
+	@include theme.block-properties('product');
 }

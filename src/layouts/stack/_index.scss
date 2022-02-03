@@ -1,25 +1,27 @@
+@use '../../scss/theme';
+
 .l-stack {
-	@include component-properties('stack');
+	@include theme.component-properties('stack');
 
 	display: flex;
 }
 
-.l-stack[direction='vertical'] {
+.l-stack[data-direction='vertical'] {
 	flex-flow: column wrap;
 }
 
-.l-stack[direction='horizontal'] {
+.l-stack[data-direction='horizontal'] {
 	flex-direction: row;
 }
 
-.l-stack[alignment='start'] {
+.l-stack[data-alignment='start'] {
 	justify-content: flex-start;
 }
 
-.l-stack[alignment='center'] {
+.l-stack[data-alignment='center'] {
 	justify-content: center;
 }
 
-.l-stack[alignment='end'] {
+.l-stack[data-alignment='end'] {
 	justify-content: flex-end;
 }

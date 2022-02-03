@@ -1,3 +1,5 @@
+@use '../../scss/theme';
+
 .c-date {
-	@include component-properties('date');
+	@include theme.component-properties('date');
 }

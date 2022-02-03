@@ -1,3 +1,5 @@
+@use '../../scss/theme';
+
 .c-overline {
-	@include component-properties('overline');
+	@include theme.component-properties('overline');
 }

@@ -6,8 +6,8 @@ const Stack = ({
 }) => (
 	<div
 		className="l-stack"
-		direction={direction}
-		alignment={alignment}
+		data-direction={direction}
+		data-alignment={alignment}
 		style={{ '--c-stack-gap': gap }}
 	>
 		{children}
