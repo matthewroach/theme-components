@@ -1,11 +1,13 @@
+@use '../../scss/theme';
+
 .l-grid {
-	@include component-properties('grid');
+	@include theme.component-properties('grid');
 
 	display: grid;
 }
 
 .l-grid-item {
-	@each $breakpoint, $breakpointValue in $breakpoints {
+	@each $breakpoint, $breakpointValue in theme.get-breakpoints() {
 		@media only screen and ($breakpointValue) {
 			--grid-column-start: var(--grid-column-start--#{$breakpoint});
 		}

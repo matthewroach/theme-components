@@ -1,3 +1,5 @@
+@use '../../scss/theme';
+
 .c-heading {
-	@include component-properties('heading');
+	@include theme.component-properties('heading');
 }

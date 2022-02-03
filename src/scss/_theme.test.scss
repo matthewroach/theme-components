@@ -1,0 +1,45 @@
+// This is only an example, your path may be different
+@use '../../node_modules/sass-true' as *;
+
+@use 'theme' with (
+	$breakpoints: (),
+	$global: (),
+	$alias: (),
+	$tokens: (
+		default: (
+			blocks: (
+				'non-empty-block': (
+					color: 'red',
+				),
+			),
+		)
+	),
+);
+
+
+@include test-module('Theme') {
+	@include test('block-properties') {
+		@include test('empty block') {
+			@include assert {
+				@include output {
+					@include theme.block-properties('no-block');
+				}
+
+				@include expect {}
+			}
+		}
+
+		@include test('non empty block') {
+			@include assert {
+				@include output {
+					@include theme.block-properties('non-empty-block');
+				}
+
+				@include expect {
+					color: var(--b-non-empty-block-color);
+				}
+			}
+		}
+
+	}
+}

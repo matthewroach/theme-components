@@ -1,12 +1,14 @@
-.b-promo {
-	@include block-components('promo');
+@use '../../scss/theme';
 
-	@include block-properties('promo');
+.b-promo {
+	@include theme.block-components('promo');
+
+	@include theme.block-properties('promo');
 }
 
 
 .b-custom-promo {
-	@include block-components('custom-promo');
+	@include theme.block-components('custom-promo');
 
-	@include block-properties('custom-promo');
+	@include theme.block-properties('custom-promo');
 }

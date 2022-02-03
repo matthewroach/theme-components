@@ -1,3 +1,5 @@
+@use '../../scss/theme';
+
 .c-paragraph {
-	@include component-properties('paragraph');
+	@include theme.component-properties('paragraph');
 }

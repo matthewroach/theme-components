@@ -1,5 +1,7 @@
+@use '../../scss/theme';
+
 .c-image {
-	@include component-properties('image');
+	@include theme.component-properties('image');
 
 	min-width: 0;
 	object-fit: cover;

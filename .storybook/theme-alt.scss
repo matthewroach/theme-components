@@ -1,155 +1,153 @@
-$breakpoints: (
-	default: 'min-width: 0',
-	tablet: 'min-width: 48rem',
-	desktop: 'min-width: 64rem',
-);
+@use '../src/index' with (
+	$breakpoints: (
+		default: 'min-width: 0',
+		tablet: 'min-width: 48rem',
+		desktop: 'min-width: 64rem',
+	),
 
-// Global Tokens
-$global: (
-	'gray-50': rgb(218 218 218),
-	'gray-100': rgb(87 87 87),
-	'gray-900': rgb(25 25 25),
+	// Global Tokens
+	$global: (
+		'gray-50': rgb(218 218 218),
+		'gray-100': rgb(87 87 87),
+		'gray-900': rgb(25 25 25),
 
-	'blue-500': rgb(79 93 117),
-	'blue-600': rgb(80 103 127),
+		'blue-500': rgb(79 93 117),
+		'blue-600': rgb(80 103 127),
 
-	'spacing-25': 8px,
-	'spacing-50': 16px,
-	'spacing-100': 24px,
-	'spacing-150': 32px,
-	'spacing-200': 36px,
+		'spacing-25': 8px,
+		'spacing-50': 16px,
+		'spacing-100': 24px,
+		'spacing-150': 32px,
+		'spacing-200': 36px,
 
-	'font-weight-100': 100,
-	'font-weight-200': 200,
-	'font-weight-300': 300,
-	'font-weight-400': 400,
-	'font-weight-500': 500,
-	'font-weight-600': 600,
-	'font-weight-700': 700,
-	'font-weight-800': 800,
-	'font-weight-900': 900,
+		'font-weight-100': 100,
+		'font-weight-200': 200,
+		'font-weight-300': 300,
+		'font-weight-400': 400,
+		'font-weight-500': 500,
+		'font-weight-600': 600,
+		'font-weight-700': 700,
+		'font-weight-800': 800,
+		'font-weight-900': 900,
 
-	'font-size-100': 0.875rem,
-	'font-size-200': 1rem,
-	'font-size-300': 1.125rem,
-	'font-size-400': 1.375rem,
-	'font-size-500': 1.625rem,
-	'font-size-600': 1.875rem,
-	'font-size-700': 2.25rem,
-	'font-size-800': 2.75rem,
-	'font-size-900': 3.25rem,
-);
+		'font-size-100': 0.875rem,
+		'font-size-200': 1rem,
+		'font-size-300': 1.125rem,
+		'font-size-400': 1.375rem,
+		'font-size-500': 1.625rem,
+		'font-size-600': 1.875rem,
+		'font-size-700': 2.25rem,
+		'font-size-800': 2.75rem,
+		'font-size-900': 3.25rem,
+	),
 
-$alias: (
-	'primary-color': var(--global-blue-500),
-	'primary-font-family': 'Patua One',
-	'secondary-font-family': 'Open Sans',
+	$alias: (
+		'primary-color': var(--global-blue-500),
+		'primary-font-family': 'Patua One',
+		'secondary-font-family': 'Open Sans',
 
-	'font-size-tiny': var(--global-font-size-100),
-	'font-size-small': var(--global-font-size-200),
-	'font-size-body': var(--global-font-size-500),
-);
+		'font-size-tiny': var(--global-font-size-100),
+		'font-size-small': var(--global-font-size-200),
+		'font-size-body': var(--global-font-size-500),
+	),
 
-$tokens: (
-	default: (
-		// Alias Tokens
-		alias: (),
-		// Component Tokens
-		components: (
-			'body': (
-				'font-family': var(--secondary-font-family),
-				'font-size': var(--font-size-body),
+	$tokens: (
+		default: (
+			// Alias Tokens
+			alias: (),
+			// Component Tokens
+			components: (
+				'body': (
+					'font-family': var(--secondary-font-family),
+					'font-size': var(--font-size-body),
+				),
+				'caption': (
+					'color': var(--global-gray-100),
+					'font-size': var(--font-size-small),
+				),
+				'date': (
+					'background-color': transparent,
+					'color': inherit,
+					'font-weight': var(--global-font-weight-400),
+				),
+				'heading': (
+					'font-size': inherit,
+					'font-weight': var(--global-font-weight-700),
+					'line-height': 1.5,
+				),
+				'image': (
+					'aspect-ratio': '4 / 3',
+				),
+				'link': (
+					'color': inherit,
+					'font-size': inherit,
+					'text-decoration': underline,
+				),
+				'link-hover': (
+					'color': var(--global-blue-500),
+					'text-decoration': none,
+				),
+				'link-visited': (
+					'text-decoration': none,
+				),
+				'paragraph': (
+					'font-family': inherit,
+					'font-size': var(--font-size-body),
+					'line-height': 1.5,
+				),
+				'overline': (
+					'background-color': transparent,
+					'color': inherit,
+					'font-weight': var(--global-font-weight-700),
+				),
+				'grid': (
+					'gap': var(--global-spacing-100),
+					'grid-template-columns': 'repeat(12, 1fr)'
+				),
+				'stack': (
+					'gap': var(--global-spacing-50),
+				),
 			),
-			'caption': (
-				'color': var(--global-gray-100),
-				'font-size': var(--font-size-small),
-			),
-			'date': (
-				'background-color': transparent,
-				'color': inherit,
-				'font-weight': var(--global-font-weight-400),
-			),
-			'heading': (
-				'font-size': inherit,
-				'font-weight': var(--global-font-weight-700),
-				'line-height': 1.5,
-			),
-			'image': (
-				'aspect-ratio': '4 / 3',
-			),
-			'link': (
-				'color': inherit,
-				'font-size': inherit,
-				'text-decoration': underline,
-			),
-			'link-hover': (
-				'color': var(--global-blue-500),
-				'text-decoration': none,
-			),
-			'link-visited': (
-				'text-decoration': none,
-			),
-			'paragraph': (
-				'font-family': inherit,
-				'font-size': var(--font-size-body),
-				'line-height': 1.5,
-			),
-			'overline': (
-				'background-color': transparent,
-				'color': inherit,
-				'font-weight': var(--global-font-weight-700),
-			),
-			'grid': (
-				'gap': var(--global-spacing-100),
-				'grid-template-columns': 'repeat(12, 1fr)'
-			),
-			'stack': (
-				'gap': var(--global-spacing-50),
-			),
-		),
 
-		// Blocks Tokens
-		blocks: (
-			'promo': (
-				'components': (
-					'heading': (
-						'font-size': var(--global-font-size-500),
-						'line-height': 1.25,
+			// Blocks Tokens
+			blocks: (
+				'promo': (
+					'components': (
+						'heading': (
+							'font-size': var(--global-font-size-500),
+							'line-height': 1.25,
+						),
+						'link': (
+							'text-decoration': none,
+						),
+						'stack': (
+							'gap': var(--global-spacing-100),
+						),
 					),
-					'link': (
-						'text-decoration': none,
-					),
-					'stack': (
-						'gap': var(--global-spacing-100),
+				),
+				'product': (
+					'components': (
+						'heading': (
+							'font-size': var(--global-font-size-600),
+							'font-weight': var(--global-font-weight-900),
+						),
 					),
 				),
 			),
-			'product': (
-				'components': (
-					'heading': (
-						'font-size': var(--global-font-size-600),
-						'font-weight': var(--global-font-weight-900),
-					),
+		),
+		tablet: (
+			alias: (),
+			components: (
+				'stack': (
+					'gap': var(--global-spacing-50),
 				),
 			),
+			blocks: (),
 		),
-	),
-	tablet: (
-		alias: (),
-		components: (
-			'stack': (
-				'gap': var(--global-spacing-50),
-			),
-		),
-		blocks: (),
-	),
-	mobile: (
-		alias: (),
-		components: (),
-		blocks: (),
+		mobile: (
+			alias: (),
+			components: (),
+			blocks: (),
+		)
 	)
 );
-
-
-
-@import '../src/_index.scss';

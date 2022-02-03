@@ -1,5 +1,7 @@
+@use '../../scss/theme';
+
 .l-stack {
-	@include component-properties('stack');
+	@include theme.component-properties('stack');
 
 	display: flex;
 }
