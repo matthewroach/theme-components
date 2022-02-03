@@ -17,8 +17,9 @@
     "README.md"
   ],
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files",
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files && npm run copy:ignore",
     "component:new": "hygen component new",
+    "copy:ignore": "cp src/.npmignore dist/",
     "lint": "eslint --ext js --ext jsx src",
     "lint:fix": "npm run lint -- --fix",
     "lint:styles": "stylelint '**/*.scss' --formatter verbose",
