@@ -3,11 +3,19 @@
 .c-link {
 	@include theme.component-properties('link');
 
+	&:visited {
+		@include theme.component-properties('link-visited');
+	}
+
 	&:hover {
 		@include theme.component-properties('link-hover');
 	}
 
-	&:visited {
-		@include theme.component-properties('link-visited');
+	&:focus {
+		@include theme.component-properties('link-focus');
+	}
+
+	&:active {
+		@include theme.component-properties('link-active');
 	}
 }
