@@ -21,20 +21,11 @@ Headings should always:
 
 ## Usage
 
-### Heading
-
-<Props of={Heading} />
-
-Always use the `<Heading>` component in a block that you wish to make an HTML heading.
-
-The component will use the correct heading element from 1 to 6 depending on location.
-
-By default this will output as `<h1>` if used on its own within a page. To ensure
-corrent hierarchy ensure the use of `<HeadingSection>` is used.
+Using just the `<Heading>` component on its own
 
 ```jsx
 
-import { Heading } from '@wpmedia/theme-components';
+import { Heading } from '@matthewroach/theme-components';
 
 const BlockFeature = () => (
   <Heading>Heading Text</Heading>
@@ -42,22 +33,11 @@ const BlockFeature = () => (
 
 ```
 
-### HeadingSection
-
-<Props of={HeadingSection} />
-
-The `<HeadingSection>` component should be used to wrap all `<Heading>` components
-that should not be the page title.
-
-The `<HeadingSection>` component will increase the heading element value each time
-it is used. If you are making a feature that has a heading to be output as a title
-for a group of stories then using the `<HeadingSection>` will increase the
-`<Heading>` items for you providing you correct hierarchy output of headings.
-
+Using the hierarchy features with `<HeadingSection>`
 
 ```jsx
 
-import { Heading, HeadingSection } from '@wpmedia/theme-components';
+import { Heading, HeadingSection } from '@matthewroach/theme-components';
 
 const SectionBlockFeature = () => (
   <HeadingSection>
@@ -72,6 +52,29 @@ const SectionBlockFeature = () => (
 )
 
 ```
+
+### Heading
+
+<Props of={Heading} />
+
+Always use the `<Heading>` component in a block that you wish to make an HTML heading.
+
+The component will use the correct heading element from 1 to 6 depending on location.
+
+By default this will output as `<h1>` if used on its own within a page. To ensure
+corrent hierarchy ensure the use of `<HeadingSection>` is used.
+
+### HeadingSection
+
+<Props of={HeadingSection} />
+
+The `<HeadingSection>` component should be used to wrap all `<Heading>` components
+that should not be the page title.
+
+The `<HeadingSection>` component will increase the heading element value each time
+it is used. If you are making a feature that has a heading to be output as a title
+for a group of stories then using the `<HeadingSection>` will increase the
+`<Heading>` items for you providing you correct hierarchy output of headings.
 
 
 ## Stories
