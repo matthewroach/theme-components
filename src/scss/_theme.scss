@@ -138,8 +138,10 @@ $tokens: () !default;
 
 @if list.length($tokens) != 0 {
 	@each $breakpoint, $breakpointValue in $breakpoints {
-		@media ($breakpointValue) {
-			@include root-tokens(map.get($tokens, $breakpoint));
+		@if map.has-key($tokens, $breakpoint) {
+			@media ($breakpointValue) {
+				@include root-tokens(map.get($tokens, $breakpoint));
+			}
 		}
 	}
 }
