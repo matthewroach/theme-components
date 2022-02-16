@@ -25,7 +25,9 @@
 					@include theme.block-properties('no-block');
 				}
 
-				@include expect {}
+				@include expect {
+					// Empty
+				}
 			}
 		}
 

@@ -13,7 +13,7 @@
       true,
       {
         "browsers": ["> 1%", "Last 2 versions", "not IE 11"],
-        "ignore": ["css-sticky","multicolumn"],
+        "ignore": ["css-sticky","multicolumn","object-fit","css-masks","css-clip-path"],
         "ignorePartialSupport": true,
         "severity": "warning"
       }
