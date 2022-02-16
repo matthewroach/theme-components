@@ -9,12 +9,22 @@ import <%= Name %> from './';
 
 # <%= Name %>
 
-<Props of={<%= Name %>} />
-
+Short description about the component
 
 ## Usage
 
-<%= Name %>.........
+```jsx
+
+import { <%= Name %> } from '@matthewroach/theme-components';
+
+const BlockFeature = () => (
+  <<%= Name %>><%= Name %> Text</<%= Name %>>
+)
+
+```
+
+<Props of={<%= Name %>} />
+
 
 ## Stories
 
