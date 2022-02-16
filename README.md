@@ -22,3 +22,12 @@ npm run component:new -- button
 ```
 
 The folder structure and base files to get you going are then created in `src/components/button/`
+
+
+## npmrc
+
+
+```
+@matthewroach:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=
+```
