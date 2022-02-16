@@ -23,6 +23,8 @@ const BlockFeature = () => (
 
 ```
 
+## Props
+
 <Props of={<%= Name %>} />
 
 
