@@ -6,12 +6,24 @@ import Link from './';
 
 # Link
 
-<Props of={Link} />
-
+Link can be used to provide an anchor link for either an internal or external URL.
 
 ## Usage
 
-Link can be used to provide an anchor link for either an internal or external URL.
+```jsx
+
+import { Link } from '@matthewroach/theme-components';
+
+const Feature = () => (
+	<Link href="https://github.com/matthewroach">github.com/matthewroach</Link>
+);
+
+```
+
+## Props
+
+<Props of={Link} />
+
 
 ## Stories
 
@@ -25,6 +37,6 @@ Link can be used to provide an anchor link for either an internal or external UR
 ** External Link **
 <Preview>
 	<Story name="External Link">
-		<Link href="https://arcxp.com">ARC XP</Link>
+		<Link href="https://github.com/matthewroach">github.com/matthewroach</Link>
 	</Story>
 </Preview>
