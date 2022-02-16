@@ -84,23 +84,23 @@ $tokens: () !default;
 // root-tokens
 // mixin to output a set of alias, components and block tokens from a given map
 //
-// $tokens - A map of tokens that contains the alias, components and blocks maps
+// $tokenMap - A map of tokens that contains the alias, components and blocks maps
 //
-@mixin root-tokens($tokens: ()) {
-	@if list.length($tokens) != 0 {
+@mixin root-tokens($tokenMap: ()) {
+	@if list.length($tokenMap) != 0 {
 		:root {
 			// Alias Tokens
-			@if map.has-key($tokens, 'alias') {
-				@each $name, $value in map.get($tokens, 'alias') {
+			@if map.has-key($tokenMap, 'alias') {
+				@each $name, $value in map.get($tokenMap, 'alias') {
 					--#{$name}: #{$value};
 				}
 			}
 
 			// Component Tokens
-			@include token-map-to-css-variable($tokens, 'components', $component-prefix);
+			@include token-map-to-css-variable($tokenMap, 'components', $component-prefix);
 
 			// Block Tokens
-			@include token-map-to-css-variable($tokens, 'blocks', $block-prefix);
+			@include token-map-to-css-variable($tokenMap, 'blocks', $block-prefix);
 		}
 	}
 }
